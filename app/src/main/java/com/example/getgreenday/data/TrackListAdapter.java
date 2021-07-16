@@ -98,7 +98,11 @@ public class TrackListAdapter extends RecyclerView.Adapter<TrackListAdapter.Trac
         TrackData trackData;
         trackData = (isFavorite) ? favorites.get(position): trackDataList.get(position);
 
+        int size = (isFavorite) ? (favorites.size() - 1): (trackDataList.size() - 1);
         holder.bind(trackData);
+        if (position == size) holder.binding.divider.setVisibility(View.INVISIBLE);
+
+
         holder.binding.star.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
