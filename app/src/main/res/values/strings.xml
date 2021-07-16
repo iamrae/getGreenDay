@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GetGreenDay</string>
+    <string name="title_tracklist">TrackList</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="msg_addedToFavorites">즐겨찾기에 추가되었습니다.</string>
+    <string name="msg_removedFromFavorites">즐겨찾기에서 삭제되었습니다.</string>
+</resources>
